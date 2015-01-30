@@ -30,10 +30,16 @@
           <div data-role="navbar">
             <ul>
               <li>
-                <a class="ui-btn-active" href="index1.html" data-icon="bars">Página 1</a>
+                <a class="ui-btn-active" href="#pag1" data-icon="bars">Página 3</a>
               </li>
               <li>
-                <a href="index2.html" data-icon="gear">Página 2</a>
+                <a href="#pag2" data-icon="gear">Página 2</a>
+              </li>
+              <li>
+                <a href="#pag3" data-icon="gear">Página 3</a>
+              </li>
+              <li>
+                <a href="#pag4" data-icon="gear">Página 4</a>
               </li>
             </ul>
           </div>
@@ -82,11 +88,18 @@
           <div data-role="navbar">
             <ul>
               <li>
-                <a class="ui-btn-active" href="index1.html" data-icon="bars">Página 1</a>
+                <a href="#pag1" data-icon="gear">Página 1</a>
               </li>
               <li>
-                <a href="index2.html" data-icon="gear">Página 2</a>
+                <a class="ui-btn-active" href="#pag2" data-icon="bars">Página 2</a>
               </li>
+              <li>
+                <a href="#pag3" data-icon="gear">Página 3</a>
+              </li>
+              <li>
+                <a href="#pag4" data-icon="gear">Página 4</a>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -98,37 +111,103 @@
           <h1>Lista simple</h1>
         </div>
         <div role="main" class="ui-content">
-          <ul data-role="listview">
-            <li><a href>Elemento 1</a>
+          <ul data-role="listview" data-filter="true"
+          data-filter-placeholder="Buscar Alumno" data-autodividers="true">
+          <li data-icon="check"><a href><img src="i/persona.png" />Alejandra<span class="ui-li-count">45</span></a>
+          </li>
+          <li data-icon="info"><a href>Alejandro<span class="ui-li-count">45</span></a>
+          </li>
+          <li data-icon="forbidden"><a href>Alex<span class="ui-li-count">45</span></a>
+          </li>
+          <li data-icon="refresh"><a href>Armando<span class="ui-li-count">45</span></a>
+          </li>
+          <li><a href><h4>David<span class="ui-li-count">45</span></a>
+          </li>
+          <li><a href>Freddy<span class="ui-li-count">45</span></a>
+          </li>
+          <li><a href>Heber<span class="ui-li-count">45</span></a>
+          </li>
+          <li><a href>Jansy<span class="ui-li-count">45</span></a>
+          </li>
+          <li><a href>Juan<span class="ui-li-count">45</span></a>
+          </li>
+          <li><a href>Kenmy<span class="ui-li-count">45</span></a>
+          </li>
+          <li><a href>Manuel<span class="ui-li-count">45</span></a>
+          </li>
+          <li><a href>Rafael<span class="ui-li-count">45</span></a>
+          </li>
+          <li><a href>Ramon<span class="ui-li-count">45</span></a>
+          </li>
+          <li><a href>Ramon<span class="ui-li-count">45</span></a>
+          </li>
+        </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#pag1" data-icon="gear">Página 1</a>
             </li>
-            <li><a href>Elemento 2</a>
+            <li>
+              <a href="#pag2" data-icon="gear">Página 2</a>
             </li>
-            <li><a href>Elemento 3</a>
+            <li>
+              <a class="ui-btn-active" href="#pag3" data-icon="bars">Página 3</a>
             </li>
-            <li><a href>Elemento 4</a>
+            <li>
+              <a href="#pag4" data-icon="gear">Página 4</a>
             </li>
-            <li><a href>Elemento 5</a>
-            </li>
-            <li><a href>Elemento 6</a>
-            </li>
-            <li><a href>Elemento 7</a>
-            </li>
-            <li><a href>Elemento 8</a>
-            </li>
+
           </ul>
         </div>
-        <div data-role="footer" data-position="fixed">
-          <div data-role="navbar">
-            <ul>
-              <li>
-                <a class="ui-btn-active" href="index1.html" data-icon="bars">Página 1</a>
-              </li>
-              <li>
-                <a href="index2.html" data-icon="gear">Página 2</a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
+    </div>
+
+
+    <div data-role="page" id="pag4">
+      <div data-role="header" data-position="fixed">
+        <h1>Lista simple</h1>
+      </div>
+      <div role="main" class="ui-content">
+        <form id="forma1">
+          <div class="ui-field-contain">
+            <label for="txt1">Un campo de texto </label>
+            <input type="text" id="txt1" name="txt1" placeholder="Un campo de texto"/>
+          </div>
+          <div class="ui-field-contain">
+            <label for="slider1">Un Slider </label>
+            <input type="range" id="slider1" name="slider1" min="0" max="100" value="50" step="10"/>
+          </div>
+          <div class="ui-field-contain">
+            <div data-role="rangeslider">
+              <label for="slider2a">Presión Arterial </label>
+              <input type="range" id="slider2a" name="slider2a" min="0" max="200" value="75" step="1"/>
+              <label for="slider2b">Presión Arterial</label>
+              <input type="range" id="slider2b" name="slider2b" min="0" max="200" value="75" step="1"/>
+            </div>
+          </div>
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="#pag1" data-icon="gear">Página 1</a>
+          </li>
+          <li>
+            <a href="#pag2" data-icon="gear">Página 2</a>
+          </li>
+          <li>
+            <a href="#pag3" data-icon="gear">Página 3</a>
+          </li>
+          <li>
+            <a class="ui-btn-active" href="#pag4" data-icon="bars">Página 4</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
