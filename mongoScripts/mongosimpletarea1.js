@@ -30,20 +30,20 @@ checkSchema = function(){
     // implementar con 10 aulas.
     // del Edificio F
     for(var i =1; i<=10;i++){
-      var "Aula"+i={"cod":i,
+      var Aula+i={"cod":i,
                     "Aula":"2.0"+i,
                     "Edificio":"F"
                   };
       if(i==10){
-        var "Aula"+i={"cod":i,
+        var Aula+i={"cod":i,
                       "Aula":"2."+i,
                       "Edificio":"F"
                     };
       }
-      db.usuarios.insert("Aula"+i);
+      db.usuarios.insert(Aula+i);
     }
 
-    var Aula1={"cod":1,
+    /*var Aula1={"cod":1,
                 "Aula":"2.01",
                 "Edificio":"F"
                 };
@@ -94,7 +94,7 @@ checkSchema = function(){
         db.usuarios.insert(Aula8);
         db.usuarios.insert(Aula9);
         db.usuarios.insert(Aula10);
-
+*/
   }
 }
 
